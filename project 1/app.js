@@ -15,17 +15,15 @@ window.onload = () => {
 function main() {
   const root = document.getElementById("root");
   const btn = document.getElementById("btn");
-  const input = document.getElementById("input");
 
   btn.addEventListener("click", function () {
     root.style.backgroundColor = generateRGBColor();
-    input.value = generateRGBColor()
   });
 }
 
-// rgb(0, 0, 0), rgb(255, 255, 255)
-// return random number between 0 and 255
 function generateRGBColor() {
+  // rgb(0, 0, 0), rgb(255, 255, 255)
+  // return random number between 0 and 255
   const red = Math.floor(Math.random() * 255);
   const green = Math.floor(Math.random() * 255);
   const blue = Math.floor(Math.random() * 255);
